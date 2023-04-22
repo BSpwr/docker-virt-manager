@@ -1,4 +1,4 @@
-FROM bspwr/broadway-baseimage:latest
+FROM ghcr.io/bspwr/broadway-baseimage:latest
 
 ENV FAVICON_URL='https://raw.githubusercontent.com/virt-manager/virt-manager/931936a328d22413bb663e0e21d2f7bb111dbd7c/data/icons/256x256/apps/virt-manager.png'
 ENV APP_TITLE='Virtual Machine Manager'

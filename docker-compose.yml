@@ -1,6 +1,6 @@
 services: 
   virt-manager:
-    image: bspwr/virt-manager:latest
+    image: ghcr.io/bspwr/virt-manager:latest
     restart: always
     ports:
       - 127.0.0.1:8185:80
