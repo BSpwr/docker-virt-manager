@@ -1,6 +1,6 @@
 services: 
   virt-manager:
-    image: mber5/virt-manager:latest
+    image: bspwr/virt-manager:latest
     restart: always
     ports:
       - 127.0.0.1:8185:80

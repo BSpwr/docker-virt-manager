@@ -1,5 +1,8 @@
-[![](https://github.com/m-bers/docker-virt-manager/workflows/docker%20build/badge.svg)](https://github.com/m-bers/docker-virt-manager/actions/workflows/deploy.yml)[![](https://img.shields.io/docker/pulls/mber5/virt-manager)](https://hub.docker.com/r/mber5/virt-manager)
+[![](https://github.com/bspwr/docker-virt-manager/workflows/docker%20build/badge.svg)](https://github.com/bspwr/docker-virt-manager/actions/workflows/deploy.yml)[![](https://img.shields.io/docker/pulls/bspwr/virt-manager)](https://hub.docker.com/r/bspwr/virt-manager)
 # Docker virt-manager
+
+This is my fork of [m-bers/docker-virt-manager](https://github.com/m-bers/docker-virt-manager).
+
 ### GTK Broadway web UI for libvirt
 ![Docker virt-manager](docker-virt-manager.gif)
 
@@ -26,7 +29,7 @@ If docker and libvirt are on the same host
 ```yaml
 services: 
   virt-manager:
-    image: mber5/virt-manager:latest
+    image: bspwr/virt-manager:latest
     restart: always
     ports:
       - 127.0.0.1:8185:80
@@ -53,7 +56,7 @@ If docker and libvirt are on different hosts
 ```yaml
 services: 
   virt-manager:
-    image: mber5/virt-manager:latest
+    image: bspwr/virt-manager:latest
     restart: always
     ports:
       - 127.0.0.1:8185:80
@@ -70,7 +73,7 @@ services:
 ```
 ### Building from Dockerfile
 ```bash
-    git clone https://github.com/m-bers/docker-virt-manager.git
+    git clone https://github.com/bspwr/docker-virt-manager.git
     cd docker-virt-manager
     docker build -t docker-virt-manager . && docker-compose up -d
 ```
